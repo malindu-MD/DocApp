@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:id="@+id/navbar">
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_action_name"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="35px"
+           android:background="#ffffff"
+           android:layout_marginTop="8dp"/>
+
+       <ImageButton
+           android:id="@+id/imageButton2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="35px"
+           android:layout_marginTop="20px"
+           android:background="#ffffff"
+           app:srcCompat="@drawable/bdddell" />
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scndnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Welcome Back !!"
+            android:textColor="#39A2DB"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="25px"
+            android:text="What are you looking for  ?"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/what"
+            android:queryBackground="@drawable/se_back"
+            android:iconifiedByDefault="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:queryHint="Search Doctor,Clinic"/>
+
+
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doc"
+        android:background="@drawable/gradient"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/scndnav"
+        android:id="@+id/doc1"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hosp"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/doc1"
+        android:layout_marginTop="12dp"
+        android:id="@+id/doc2"
+        android:layout_marginLeft="30dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dia"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/doc2"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phr"
+        android:background="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/scndnav"
+        android:id="@+id/doc3"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eco"
+        android:background="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/doc3"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/doc4"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:src="@drawable/ins"
+        android:layout_below="@id/doc4"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/doc5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doc5"
+        android:text="Recently Visited Doctors"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"/>
+
+
+
+</RelativeLayout>
